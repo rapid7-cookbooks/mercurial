@@ -21,6 +21,7 @@ case node['platform']
 when "windows"
   windows_package "Mercurial" do
     source node['hg']['windows_url']
+    checksum node['hg']['windows_checksum'] if node['hg']['windows_checksum']
     action :install
   end
 else
