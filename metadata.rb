@@ -12,5 +12,5 @@ recipe "mercurial", "Installs mercurial"
 end
 
 depends           "windows"
-depends           "python"
+depends           "poise-python"
 depends           "build-essential"
