@@ -17,9 +17,9 @@
 # limitations under the License.
 #
 
-include_recipe "python"
+include_recipe "poise-python"
 include_recipe "build-essential"
 
-python_pip "mercurial" do
+python_package "mercurial" do
   action :upgrade
 end
